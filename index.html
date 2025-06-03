@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tareas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="contenedor container mt-5">
+    <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Lista de Tareas 📝</h1>
+    <div class="seccion-entrada d-flex gap-2 mb-3">
+      <input type="text" id="entrada-tarea" class="form-control" placeholder="Escribí una tarea..." />
+      <button id="boton-agregar" class="btn btn-success">Agregar</button>
+    </div>
+    <div class="seccion-filtro text-center mb-3">
+      <button data-filtro="todas" class="boton-filtro btn btn-outline-secondary active">Todas</button>
+      <button data-filtro="activas" class="boton-filtro btn btn-outline-secondary">Activas</button>
+      <button data-filtro="completadas" class="boton-filtro btn btn-outline-secondary">Completadas</button>
+    </div>
+    <ul id="lista-tareas" class="list-unstyled"></ul>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
