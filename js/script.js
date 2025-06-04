@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const li = document.createElement("li");
       li.className = "tarea" + (tarea.completada ? " completada" : "");
 
-      const span = document.createElement("span");
-      span.textContent = tarea.texto;
+      const parrafo = document.createElement("p");
+      parrafo.textContent = tarea.texto;
 
       const botones = document.createElement("div");
       botones.className = "botones-tarea";
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       botones.appendChild(botonCompletar);
       botones.appendChild(botonEliminar);
 
-      li.appendChild(span);
+      li.appendChild(parrafo);
       li.appendChild(botones);
       listaTareas.appendChild(li);
     });
